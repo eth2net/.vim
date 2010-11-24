@@ -1,3 +1,18 @@
 [submodule "addons/git-vim"]
 	path = addons/git-vim
 	url = git://github.com/motemen/git-vim.git
+[submodule "addons/neocomplcache"]
+	path = addons/neocomplcache
+	url = git://github.com/Shougo/neocomplcache.git
+[submodule "addons/nerdtree"]
+	path = addons/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "addons/surround"]
+	path = addons/surround
+	url = git://github.com/tpope/vim-surround.git
+[submodule "addons/supertab"]
+	path = addons/supertab
+	url = git://github.com/ervandew/supertab.git
+[submodule "addons/bufexplorer"]
+	path = addons/bufexplorer
+	url = git://github.com/vim-scripts/bufexplorer.zip.git
