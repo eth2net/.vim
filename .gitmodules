@@ -16,3 +16,6 @@
 [submodule "addons/bufexplorer"]
 	path = addons/bufexplorer
 	url = git://github.com/vim-scripts/bufexplorer.zip.git
+[submodule "addons/nerdcommenter"]
+	path = addons/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
