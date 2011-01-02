@@ -303,8 +303,8 @@ let g:miniBufExplModSelTarget = 1
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 let g:vimwiki_use_mouse = 1
 let g:vimwiki_CJK_length = 1
-let g:vimwiki_list = [{'path': '~/vimwiki/',
-            \ 'path_html': '~/vimwiki/html/',
+let g:vimwiki_list = [{'path': '~/vimwiki/wikifile',
+            \ 'path_html': '~/vimwiki',
             \ 'auto_export': 1,
-            \ 'html_header': '~/vimwiki/html/header.tpl',
-            \ 'html_footer': '~/vimwiki/html/footer.tpl',}]
+            \ 'html_header': '~/vimwiki/header.tpl',
+            \ 'html_footer': '~/vimwiki/footer.tpl',}]
