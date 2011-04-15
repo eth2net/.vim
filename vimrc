@@ -25,13 +25,14 @@ if has("autocmd")
     \| exe "normal g'\"" | endif
 endif
 
-set mouse=a
-set selection=exclusive
-set selectmode=mouse,key
+"set mouse=a
+"set selection=exclusive
+"set selection=inclusive
+"set selectmode=mouse,key
 
 " 寄存器和系统剪贴板共享
 " share system clipboard.
-set clipboard+=unnamed
+"set clipboard+=unnamed
 
 " Search
 set hlsearch
@@ -186,7 +187,7 @@ map ;u ]u
 "autocmd FileType php set tabstop=8 | set expandtab | set shiftwidth=8 | set smarttab
 
 " Python
-autocmd BufRead *.py nmap <F6> :!python % 
+autocmd BufRead *.py nmap <F6> :w !clear;python % 
 autocmd BufNewFile *.py 0r ~/.vim/skeleton/skeleton.py
 
 " Shell
@@ -308,3 +309,6 @@ let g:vimwiki_list = [{'path': '~/vimwiki/wikifile',
             \ 'auto_export': 1,
             \ 'html_header': '~/vimwiki/header.tpl',
             \ 'html_footer': '~/vimwiki/footer.tpl',}]
+
+set mouse=
+set clipboard+=unnamed
