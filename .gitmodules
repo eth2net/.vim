@@ -19,3 +19,6 @@
 [submodule "addons/nerdcommenter"]
 	path = addons/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
+[submodule "addons/vim-markdown"]
+	path = addons/vim-markdown
+	url = git://github.com/tpope/vim-markdown.git
