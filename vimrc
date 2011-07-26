@@ -230,8 +230,8 @@ let Tlist_GainFocus_On_ToggleOpen = 1 "使用:TlistToggle打开taglist窗口时�
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 "=>pydiction
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-"let g:pydiction_location = '/home/york/.vim/ftplugin/pydiction/complete-dict'
-"let g:pydiction_menu_height = 20
+let g:pydiction_location = '/home/york/.vim/ftplugin/pydiction/complete-dict'
+let g:pydiction_menu_height = 20
 
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 "=>netrw setting 文件管理器
