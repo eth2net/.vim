@@ -43,3 +43,6 @@
 [submodule "addons/vim-autocomplpop"]
 	path = addons/vim-autocomplpop
 	url = git://github.com/vim-scripts/AutoComplPop.git
+[submodule "addons/tasklist"]
+	path = addons/tasklist
+	url = git://github.com/vim-scripts/TaskList.vim.git
