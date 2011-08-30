@@ -11,7 +11,7 @@ let mapleader = ","
 let g:mapleader = ","
 
 " iautoscroll.vim
-let g:IAutoScrollMode="center"
+let g:IAutoScrollMode="on"
 
 highlight WhiteSpaceEOL ctermbg=darkgreen
 match WhiteSpaceEOL /\s\+$/
