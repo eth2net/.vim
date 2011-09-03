@@ -289,6 +289,13 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+"=>surround
+"'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+" html#django
+autocmd FileType html let g:surround_{char2nr("j")} = "{{ \r }}"
+autocmd FileType html let g:surround_{char2nr("f")} = "{% \r %}"
+
+"'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 "=>winmanager
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 "let g:winManagerWindowLayout = \"BufExplorer,FileExplorer|TagList\"
