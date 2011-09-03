@@ -37,9 +37,6 @@
 [submodule "addons/python.vim"]
 	path = addons/python.vim
 	url = git://github.com/vim-scripts/python.vim.git
-[submodule "addons/pydiction"]
-	path = addons/pydiction
-	url = git://github.com/vim-scripts/Pydiction.git
 [submodule "addons/vim-autocomplpop"]
 	path = addons/vim-autocomplpop
 	url = git://github.com/vim-scripts/AutoComplPop.git

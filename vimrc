@@ -230,14 +230,21 @@ let Tlist_GainFocus_On_ToggleOpen = 1 "使用:TlistToggle打开taglist窗口时�
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 "=>pydiction
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-let g:pydiction_location = '/home/york/.vim/ftplugin/pydiction/complete-dict'
-let g:pydiction_menu_height = 20
+"let g:pydiction_location = '/home/york/.vim/addons/pydiction/complete-dict'
+"let g:pydiction_menu_height = 20
 
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 "=>netrw setting 文件管理器
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 let g:netrw_winsize = 30
 nmap <silent> <leader>fe :Sexplore!<cr>
+
+"'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+"=>SuperTab
+"'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+let g:SuperTabRetainCompletionType=2
+let g:SuperTabDefaultCompletionType="<C-x><C-u>"
+"let g:SuperTabDefaultCompletionType="context"
 
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 "=>NeoComplCache
@@ -254,14 +261,7 @@ let g:neocomplcache_enable_smart_case = 1
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 "=>AutoComplPop
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-let g:acp_enableAtStartup = 0
-
-"'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-"=>SuperTab
-"'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-"let g:SuperTabRetainCompletionType=2
-let g:SuperTabDefaultCompletionType="<C-X><C-U>"
-"let g:SuperTabDefaultCompletionType="context"
+"let g:acp_enableAtStartup = 0
 
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 "=>BufExplorer
