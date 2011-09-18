@@ -46,10 +46,11 @@ set history=300
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
 " Set statusline
-set statusline=%F%m%r%h%w\ [Branch=%{GitBranch()}]\ [POS=%04lL,%04vC][%p%%\ OF\ %L]\ %=[FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]
+set statusline=%F%m%r%h%w\ [Branch=%{GitBranch()}]\ [POS=%04lL,%04vC][%p%%\ OF\ %L]\ %=[FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=0x\%02.2B]
 set laststatus=2
 
 " Enable filetype plugin
+filetype on
 filetype plugin on
 filetype indent on
 
@@ -175,6 +176,10 @@ vnoremap  #  y?<C-R>=escape(@", '\\/.*$^~[]')<CR><CR>
 " python_fn
 map ;c ]#
 map ;u ]u
+
+" windows
+nmap <C-h> :bp<cr>
+nmap <C-l> :bn<cr>
 
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 "=>Tab control
