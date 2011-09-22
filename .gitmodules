@@ -43,3 +43,6 @@
 [submodule "addons/tasklist"]
 	path = addons/tasklist
 	url = git://github.com/vim-scripts/TaskList.vim.git
+[submodule "addons/vim-colors-solarized"]
+	path = addons/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git

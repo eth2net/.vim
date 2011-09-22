@@ -10,13 +10,22 @@ call pathogen#helptags()
 let mapleader = ","
 let g:mapleader = ","
 
+if has('gui_running')
+  set guifont=Monaco\ 12
+endif
+
 " iautoscroll.vim
 let g:IAutoScrollMode="on"
 
 highlight WhiteSpaceEOL ctermbg=darkgreen
 match WhiteSpaceEOL /\s\+$/
+set t_Co=256
+set background=dark
+colorscheme solarized
+"colorscheme torte
 "colorscheme mydesert
-colorscheme desert
+"colorscheme desert
+"let g:solarized_termcolors=256
 
 "Uncomment the following to have Vim jump to the last position when
 " reopening a file
