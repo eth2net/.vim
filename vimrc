@@ -21,8 +21,8 @@ highlight WhiteSpaceEOL ctermbg=darkgreen
 match WhiteSpaceEOL /\s\+$/
 set t_Co=256
 set background=dark
-colorscheme solarized
-"colorscheme torte
+"colorscheme solarized
+colorscheme torte
 "colorscheme mydesert
 "colorscheme desert
 "let g:solarized_termcolors=256
