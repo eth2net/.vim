@@ -202,10 +202,19 @@ nmap <C-l> :bn<cr>
 
 " Python
 autocmd BufRead *.py nmap <F6> :w !clear;python % 
-autocmd BufNewFile *.py 0r ~/.vim/skeleton/skeleton.py
+
+"'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+"=>Template
+"'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+let g:template_dir = $HOME."/.vim/skeleton/"
+let g:template_author = "eth2net [at] gmail.com"
+
+" Python
+"autocmd BufNewFile *.py 0r ~/.vim/skeleton/skeleton.py
 
 " Shell
-autocmd BufNewFile *.sh 0r ~/.vim/skeleton/skeleton.sh
+"autocmd BufNewFile *.sh 0r ~/.vim/skeleton/skeleton.sh
 
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 "=>Omni Complete
