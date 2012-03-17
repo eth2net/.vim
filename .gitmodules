@@ -55,3 +55,6 @@
 [submodule "addons/repeat"]
 	path = addons/repeat
 	url = git://github.com/vim-scripts/repeat.vim.git
+[submodule "addons/drawit"]
+	path = addons/drawit
+	url = git://github.com/vim-scripts/DrawIt.git
