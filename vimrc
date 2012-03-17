@@ -20,7 +20,7 @@ let g:IAutoScrollMode="on"
 highlight WhiteSpaceEOL ctermbg=darkgreen
 match WhiteSpaceEOL /\s\+$/
 set t_Co=256
-set background=dark
+"set background=dark
 "colorscheme solarized
 colorscheme torte
 "colorscheme mydesert
@@ -38,6 +38,8 @@ endif
 "set selection=exclusive
 "set selection=inclusive
 "set selectmode=mouse,key
+
+"set cursorline
 
 " 寄存器和系统剪贴板共享
 " share system clipboard.
@@ -134,7 +136,7 @@ set matchtime=5 " 匹配时间 time=0.1s
 set smartcase " Do smart case matching
 set mouse=a " Enable mouse usage (all modes)
 
-set fdm=manual " foldmethod代码折叠(manual,indent,expr,syntax,diff,maker)
+"set fdm=syntax " foldmethod代码折叠(manual,indent,expr,syntax,diff,maker)
 set number " 显示行号
 set autoindent " 自动缩进
 
@@ -155,7 +157,9 @@ inoremap jj <ESC>
 "noremap <silent> <S-Tab> @='<<'<CR>
 "noremap <Tab> @='>>'<CR>
 nmap <tab> v>
+vmap <tab> v>
 nmap <s-tab> v<
+vmap <s-tab> v<
 
 " Tag List Open/Close
 map <silent> <F9> :TlistToggle<cr>
@@ -167,6 +171,10 @@ map <F2> :NERDTreeToggle<cr>
 
 " Open BufExplorer
 "nmap <silent> <C-b> <leader>be
+
+"Conque
+map <F4> :ConqueTermSplit bash<cr>
+map <F5> :ConqueTermSplit bpython2<cr>
 
 " Paste mode
 nmap <F3> :set pastetoggle<CR>
@@ -201,7 +209,7 @@ nmap <C-l> :bn<cr>
 "autocmd FileType php set tabstop=8 | set expandtab | set shiftwidth=8 | set smarttab
 
 " Python
-autocmd BufRead *.py nmap <F6> :w !clear;python % 
+"autocmd BufRead *.py nmap <F6> :w !clear;python % 
 
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 "=>Template
@@ -265,7 +273,7 @@ nmap <silent> <leader>fe :Sexplore!<cr>
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 "=>SuperTab
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-let g:SuperTabRetainCompletionType=2
+let g:SuperTabRetainCompletionType=0
 let g:SuperTabDefaultCompletionType="<C-x><C-u>"
 "let g:SuperTabDefaultCompletionType="context"
 
@@ -284,7 +292,8 @@ let g:neocomplcache_enable_smart_case = 1
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 "=>AutoComplPop
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-"let g:acp_enableAtStartup = 0
+let g:acp_enableAtStartup = 0
+let g:acp_behaviorKeywordLength = 2
 
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 "=>BufExplorer
@@ -315,8 +324,24 @@ let g:miniBufExplModSelTarget = 1
 "=>surround
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 " html#django
-autocmd FileType html let g:surround_{char2nr("j")} = "{{ \r }}"
-autocmd FileType html let g:surround_{char2nr("f")} = "{% \r %}"
+"autocmd FileType html let g:surround_{char2nr("j")} = "{{ \r }}"
+"autocmd FileType html let g:surround_{char2nr("f")} = "{% \r %}"
+"autocmd FileType html let g:surround_{char2nr("d")} = "<div class=\"\">\r</div>"
+"autocmd FileType html let g:surround_45 = "<?php \r ?>"
+let g:surround_{char2nr("j")} = "{{ \r }}"
+let g:surround_{char2nr("f")} = "{% \r %}"
+let g:surround_{char2nr("d")} = "<div class=\"\">\r</div>"
+
+"'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+"=>Conque
+"'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+let g:ConqueTerm_PyVersion = 2
+let g:ConqueTerm_FastMode = 0 " Disable FastMode
+let g:ConqueTerm_Color = 1 " Enable Color Support
+let g:ConqueTerm_InsertOnEnter = 1 " Insert after enter conque
+let g:ConqueTerm_ReadUnfocused = 1 " Continue Update
+let g:ConqueTerm_CloseOnEnd = 1 " Close terminal buffer after exit program
+let g:ConqueTerm_SendVisKey = '<C-p>' " Sent select content to terminal
 
 "'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 "=>winmanager

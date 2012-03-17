@@ -49,3 +49,9 @@
 [submodule "addons/vim-template"]
 	path = addons/vim-template
 	url = git://github.com/hotoo/template.vim.git
+[submodule "addons/conque"]
+	path = addons/conque
+	url = git://github.com/rosenfeld/conque-term.git
+[submodule "addons/repeat"]
+	path = addons/repeat
+	url = git://github.com/vim-scripts/repeat.vim.git
