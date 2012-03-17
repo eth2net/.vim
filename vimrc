@@ -367,4 +367,3 @@ let g:vimwiki_list = [{'path': '~/vimwiki/wikifile',
 
 set mouse=
 set clipboard+=unnamed
-syntax enable

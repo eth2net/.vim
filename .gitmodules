@@ -31,9 +31,6 @@
 [submodule "addons/taglist"]
 	path = addons/taglist
 	url = git://github.com/vim-scripts/taglist.vim
-[submodule "addons/miniBufExpl"]
-	path = addons/miniBufExpl
-	url = git://github.com/vim-scripts/minibufexpl.vim.git
 [submodule "addons/python.vim"]
 	path = addons/python.vim
 	url = git://github.com/vim-scripts/python.vim.git
@@ -61,3 +58,6 @@
 [submodule "addons/vim-powerline"]
 	path = addons/vim-powerline
 	url = git://github.com/Lokaltog/vim-powerline.git
+[submodule "minibufexpl"]
+	path = minibufexpl
+	url = git://github.com/fholgado/minibufexpl.vim.git
