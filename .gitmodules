@@ -58,9 +58,6 @@
 [submodule "addons/vim-powerline"]
 	path = addons/vim-powerline
 	url = git://github.com/Lokaltog/vim-powerline.git
-[submodule "minibufexpl"]
-	path = minibufexpl
-	url = git://github.com/fholgado/minibufexpl.vim.git
 [submodule "addons/fugitive"]
 	path = addons/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
